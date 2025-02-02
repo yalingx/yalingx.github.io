@@ -186,3 +186,7 @@ a.c2:hover {
 		float: right !important;
 	}
 }
+
+.non-bold-h4 {
+    font-weight: normal;
+}
