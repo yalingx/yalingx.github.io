@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Georgia, Times; font-size: 16px; }
 
@@ -118,6 +118,59 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	margin-left: 10px;
 }
 
+.press-links {
+	align-items: baseline;
+	display: flex;
+	font-size: 9.5pt;
+	gap: 8px;
+	line-height: 1.6 !important;
+	margin: 7px 0 9px 10px;
+}
+
+.press-label {
+	color: #4b4b4b;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.press-label::after {
+	content: ":";
+}
+
+.press-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.press-list a {
+	color: #4b4b4b;
+	text-decoration: none;
+}
+
+.press-list a:hover {
+	color: #731222;
+	text-decoration: underline;
+}
+
+.press-list a:not(:last-child)::after {
+	color: #aaa;
+	content: "\00b7";
+	display: inline-block;
+	margin: 0 7px;
+	text-decoration: none;
+}
+
+@media (max-width: 520px) {
+	.press-links {
+		display: block;
+	}
+
+	.press-label {
+		display: block;
+		margin-bottom: 1px;
+	}
+}
+
 .coauthors {
 	font-size: 9.5pt;
 	margin-bottom: 5px;
@@ -189,4 +242,64 @@ a.c2:hover {
 
 .non-bold-h4 {
     font-weight: normal;
+}
+
+.teaching-section {
+	margin-bottom: 40px;
+}
+
+.teaching-section h3 {
+	font-size: 13pt;
+	font-weight: 600;
+	margin: 0 0 3px;
+}
+
+.teaching-role {
+	color: #4b4b4b;
+	font-size: 9.5pt;
+	font-style: italic;
+	margin: 0 0 13px;
+}
+
+.course-list {
+	list-style: none;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.course-list li {
+	font-size: 10.5pt;
+	line-height: 1.45;
+	margin-bottom: 8px;
+}
+
+.course-code {
+	font-weight: 600;
+}
+
+.course-term {
+	color: #4b4b4b;
+	font-size: 9.5pt;
+	margin-left: 4px;
+	white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+	.teaching-section h3 {
+		font-size: 12.5pt;
+	}
+
+	.course-list {
+		margin-left: 0;
+	}
+
+	.course-list li {
+		line-height: 1.4;
+		margin-bottom: 12px;
+	}
+
+	.course-term {
+		display: block;
+		margin: 2px 0 0;
+	}
 }
