@@ -3,6 +3,22 @@
 	
 	<head>
     <meta charset="utf-8">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4XJV7RL2R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q4XJV7RL2R');
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4XJV7RL2R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q4XJV7RL2R');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Research Projects">
     <meta name="author" content="Yaling Xu">
@@ -39,6 +55,18 @@
 </div> <!-- /header -->
 			
 			<h2 style="margin-bottom:25px;">Working Papers</h2>
+
+<div class="project">
+	<p class="paper_title">
+		<a href="/files/lswx_DoL.pdf">The Division of Labor: Productivity, Coordination, and Learning</a>
+	</p>
+	<p class="coauthors">(with <a href="https://sites.google.com/site/katrinecv/" style="color: inherit; text-decoration: underline;">Katrine V. Løken</a>, <a href="https://sites.google.com/site/mikkosilliman" style="color: inherit; text-decoration: underline;">Mikko Silliman</a>, and <a href="https://www.alexanderwillen.com/" style="color: inherit; text-decoration: underline;">Alexander Willén</a>)</p>
+	<details class="abstract">
+		<summary>Abstract</summary>
+		The division of labor is fundamental to how firms organize production. Since Adam Smith, economists have recognized that dividing tasks more finely increases productivity through specialization but also raises coordination costs—a tradeoff formalized by Becker and Murphy (1992). Yet we have little systematic evidence on how this tradeoff operates within firms. Moreover, this classical perspective overlooks a second, dynamic tradeoff: firms not only produce output, but also develop a central input into future production—their workers’ human capital. A finer division of labor allows workers to develop greater expertise through repeated performance of narrowly defined tasks, but may also reduce opportunities to learn from coworkers by limiting interactions and knowledge exchange. We study both tradeoffs using population-wide Norwegian employer–employee records, linked workplace surveys, quasi-experimental variation in coworker availability, and randomized experiments with workers and managers. We find that more specialized firms exhibit higher productivity but also greater coordination costs. Their workers report more learning-by-doing but substantially less coworker learning, resulting in lower overall learning and slower wage growth. To establish the importance of coworker learning for human capital accumulation, we exploit extended coworker absences and show that losing access to colleagues reduces subsequent wage growth, particularly in occupations characterized by greater task overlap and coworker learning. To isolate the role of the division of labor from other workplace characteristics, we conduct randomized experiments that vary task allocation in otherwise identical workplaces. Workers and managers anticipate greater coordination demands, weaker coworker interactions, and lower skill accumulation under greater specialization. The experiments then ask workers to choose their preferred workplace and managers how they would organize production. Both favor greater task overlap, citing coworker interactions and learning opportunities as key reasons for their choices. Together, our findings show that the division of labor shapes not only the efficiency of current production but also the accumulation of human capital and future productive capacity.
+	</details>
+</div>
+
 <div class="project">
 	<p class="paper_title">
 		<a href="/files/DLWX_w35706.pdf">Meetings</a>
@@ -79,13 +107,11 @@
 </div>
 
 <div class="project">
-	<p class="paper_title">
-		<a href="/files/Mobile_Internet_and_Mental_Health.pdf">Mobile Internet and Mental Health</a>
-	</p>
+	<p class="paper_title">Mobile Internet and Mental Health</p>
 	<p class="coauthors">(with Lipeng Chen)</p>
 	<details class="abstract">
 		<summary>Abstract</summary>
-		Has the expansion of mobile internet improved or worsened mental health? We study the rollout of 3G mobile internet across the United States by combining coverage data from 2007 to 2020 with the Behavioral Risk Factor Surveillance System. Exploiting geographic and temporal variation in 3G availability, we find that access to mobile internet significantly worsens mental health. A 10 percentage point increase in 3G coverage increases the number of poor mental health days by 0.02 per month (0.6 percent), with larger effects among younger adults and women. Evidence on mechanisms points to increased social media use, reduced offline social interaction, and lower physical activity.
+		Has the expansion of mobile internet improved or worsened mental health? We study the rollout of 3G mobile internet across the United States by combining coverage data from 2007 to 2020 with the Behavioral Risk Factor Surveillance System. Exploiting geographic and temporal variation in 3G availability, we find that access to mobile internet significantly worsens mental health. A 10 percentage point increase in 3G coverage increases the number of poor mental health days by 0.03 per month (0.7 percent), with larger effects among younger adults and women. Evidence on mechanisms shows that 3G expansion increases smartphone use and mobile web access more than overall internet use, alongside increased frequent social media use and reductions in physical activity and social engagement.
 	</details>
 </div>
 
@@ -94,9 +120,10 @@
 	<p class="coauthors">(with <a href="https://www.ianlundberg.org/" style="color: inherit; text-decoration: underline;">Ian Lundberg</a>)</p>
 	<details class="abstract">
 		<summary>Abstract</summary>
-	    A powerful data structure for causal inference is staggered adoption: many units are observed over many time periods, and some units never become treated while other units adopt a treatment at staggered time points. Popular methods that apply in this setting include difference in difference, fixed effects, matching, and synthetic control. All of these methods use untreated or not-yet-treated units to answer the question: what would have happened if the treated unit had not become treated? We show that this question may actually hide two very different causal questions interest. The first question is what would have happened if a treated unit had never become treated over many time points. The second question is what would have happened if a treated unit had not become treated at the particular time point when they in fact became treated. Popular methods such as synthetic control are often interpreted with respect to the former question (about a longitudinal treatment). We show that they actually answer the latter question (about a point-in-time treatment). The distinction is especially relevant if many units become treated at many time points, a common setting when these methods are applied in demography.
+		A powerful data structure for causal inference is staggered adoption: many units are observed over many time periods, during which some units adopt an irreversible treatment at various time points while others remain untreated. Popular methods that apply in this setting include difference in difference, fixed effects, matching, and synthetic control. All of these methods compare the future outcomes of treatment adopters and non-adopters to answer the question: for units who adopt treatment, what outcomes would have been realized if they had remained untreated? We show that this question actually hides two very different causal questions of interest. The first is what would have happened under a momentary intervention to prevent treatment at its factual adoption time. The second is what would have happened to a treated unit under a longitudinal ban preventing treatment at all periods until outcome measurement. We show how to answer each question under conditionally ignorable treatment adoption or under parallel trends. We highlight that common methods cannot answer the second question because this question requires a time-varying comparison set with time-varying weights.
 	</details>
 </div>
+
 <!-- <div class="project">
 	<p class="paper_title">
 		<a
@@ -163,7 +190,7 @@
 			<div class="footer">
     <!-- <div class="row">
         <div class="col-xs-6">
-            <p><small><a href="mailto:yx558@cornell.edu"
+            <p><small><a href="mailto:yaling.xu@nhh.no"
                         target="_blank">Contact</a></small></p>
         </div> -->
         <!-- <div class="col-xs-6">
