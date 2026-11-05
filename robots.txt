@@ -1,0 +1,75 @@
+# Search engines are welcome: the site should stay findable on Google,
+# Bing, Google Scholar and the like.
+User-agent: *
+Allow: /
+
+# ---------------------------------------------------------------
+# Opt out of AI / bulk-scraping crawlers.
+# These directives are honored voluntarily; they deter well-behaved
+# crawlers but cannot stop one that chooses to ignore robots.txt.
+# ---------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Common Crawl (feeds many AI training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# ByteDance
+User-agent: Bytespider
+Disallow: /
+
+# Meta
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# Other bulk scrapers
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+# ---------------------------------------------------------------
+# AI-training opt-outs that do NOT affect search ranking.
+# Google-Extended excludes content from Gemini training while
+# leaving Google Search unaffected; Applebot-Extended does the
+# same for Apple Intelligence without touching Siri/Spotlight.
+# ---------------------------------------------------------------
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
